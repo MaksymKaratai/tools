@@ -1,6 +1,6 @@
 #! /bin/bash
 #
-#  ./bash/chatGptCleaner.sh --number=10 --filter='^(?!.*#).*'
+#  ./chatGptCleaner.sh --number=10 --filter='^(?!.*#).*'
 #
 #
 
@@ -185,4 +185,3 @@ fi
 echo "$parsed" | jq -c '.' | while read -r conversation; do
   deleteConversation "$conversation"
 done
-
